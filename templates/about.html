@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html lang="en">
+
+    <body>
+		{% block content %}
+             <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+
+                            <h1>Aplikasi Klasifikasi Sentimen pada Tweets PT. TRANSJAKARTA</h1>
+
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+            <section id="shortcodes">
+    <div id="testimonial-container">
+                <div class="row">
+      <div class="col-md-12">
+          <h2 class="page-header">Tentang Aplikasi</h2>
+            <blockquote>
+              <p>Aplikasi klasifikasi sentimen dibuat untuk mempermudah PT. Transjakarta dalam melihat informasi yang terkandung di dalam komentar dari konsumen bus Transjakarta pada media sosial. Informasi yang ditampilkan merupakan hasil dari proses klasifikasi komentar ke dalam dua bagian, yaitu komentar yang bersentimen positif dan komentar yang bersentimen negatif</p>
+            </blockquote>
+      </div>
+                </div>
+    </div>
+    </section>
+        {% endblock %}
+    </body>
+</html>

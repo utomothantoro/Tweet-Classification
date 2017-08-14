@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">        <title>Customer Satisfaction</title>
+		<style>
+			header, footer {
+				padding: 1em;
+				color: white;
+				background-color: #abcdef;
+				clear: left;
+				text-align: center;
+				}
+			.column{
+				text-align: justify;
+				height: 265px;
+				background-color: #e6e6fa;
+				padding: 10px;
+				font-family: sans-serif;
+				font-size: 13pt;
+				line-height: 20px;
+				text-indent: 50px;
+				}
+			ul{
+				list-style: none;
+				}
+			a{
+				text-decoration: none;
+				color: #000;
+				font-weight: bold;
+				}
+			li{
+				display: inline;
+				padding: 10px;
+				background-color: #DCDCDC
+				}
+		</style>
+    </head>
+    <body>
+		<header>
+			<h1>Sentiment Analysis of Opinion on Twitter Application</br>PT. TRANSJAKARTA</h1>
+        </header>
+		<ul>
+			<li><a href="/home/">Home</a></li>
+			<li><a href="/about/">About</a></li>
+			<li><a href="/retrieve/">Retrieve</a></li>
+			<li>Upload</li>
+			<li><a href="/help/">Help</a></li>
+			<li><a href="/login/">Logout</a></li>
+		</ul>
+		<form action="/choose_file/" method="post">{% csrf_token %}
+			<p style="margin-left: 40px">
+			<input type="button" style="font-family: sans-serif; font-size: 10pt; margin-top: 20px; width: 120px; height: 30px;" value="Choose File" /></p>
+		</form>
+		<div class="column">
+				
+		</div>
+		<footer style="margin-top: 82px">
+			Copyright &copy; Utomo Tri Hantoro
+		</footer>
+    </body>
+</html>
